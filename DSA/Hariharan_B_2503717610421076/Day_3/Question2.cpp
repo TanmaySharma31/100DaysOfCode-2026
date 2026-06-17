@@ -19,13 +19,7 @@ int main()
     cout<<"\nEnter the target value : "; //getting the target vaue
     cin>>target;
     
-    for(i=0;i<n;i++) //counting the occurrences
-    {
-                    if(arr[i]==target)
-                    {
-                                      occ++;
-                    }
-    }
+   int occ = count(arr, arr + n, target);
     
     cout<<"\nTotal number of occurrences of "<<target<<" in the array : "<<occ<<endl; //displaying the total accurrences
     
