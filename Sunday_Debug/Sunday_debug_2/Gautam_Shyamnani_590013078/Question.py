@@ -8,10 +8,7 @@ def process_scroll(names, password, spell):
     else:
         print("Invalid spell!")
         return
-    
     clean = password.lower().replace(" ", "")
-    
-    # FIX: palindrome check
     if clean == clean[::-1]:
         print("Scroll unlocked!")
         initials = [n[0].upper() for n in names]
